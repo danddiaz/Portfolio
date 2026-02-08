@@ -32,22 +32,18 @@ export default function ProjectDetail() {
         ))}
       </div>
 
-      {project.details && (
-        <>
-          <Section title="Descripción técnica">
-            {project.details.overview}
-          </Section>
-
-          <ListSection title="Funcionalidades" items={project.details.features} />
-          <ListSection title="Contribución personal" items={project.details.role} />
-          <ListSection title="Aprendizajes técnicos" items={project.details.learnings} />
-        </>
-      )}
-
       {project.github && (
         <p>
           💻 <a href={project.github} target="_blank" rel="noreferrer">
             Ver Github ({project.repoType || "GitHub"})
+          </a>
+        </p>
+      )}
+
+      {project.github2 && (
+        <p>
+          💻 <a href={project.github2} target="_blank" rel="noreferrer">
+            Ver Github ({project.repoType2 || "GitHub"})
           </a>
         </p>
       )}
@@ -58,6 +54,18 @@ export default function ProjectDetail() {
             Ver demo funcional
           </a>
         </p>
+      )}
+
+      {project.details && (
+        <>
+          <Section title="Descripción técnica">
+            {project.details.overview}
+          </Section>
+
+          <ListSection title="Funcionalidades" items={project.details.features} />
+          <ListSection title="Contribución personal" items={project.details.role} />
+          <ListSection title="Aprendizajes técnicos" items={project.details.learnings} />
+        </>
       )}
 
       <ImageCarousel images={project.images} />

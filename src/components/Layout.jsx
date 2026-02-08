@@ -14,7 +14,7 @@ export default function Layout({ children }) {
           alignItems: "center"
         }}>
           <div>
-            <h2 style={{ margin: 0 }}>Daniela Diaz Medina</h2>
+            <h2 style={{ margin: 2 }}>Daniela Diaz Medina</h2>
             <small>Analista de Datos y Desarrolladora de Software Junior</small>
           </div>
 

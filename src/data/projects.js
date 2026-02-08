@@ -27,6 +27,15 @@ import oe4 from "../assets/openedx/4.png"
 import cctv1 from "../assets/cctv/1.png"
 import cctv2 from "../assets/cctv/2.png"
 import cctv3 from "../assets/cctv/3.png"
+import crud1 from "../assets/taskmanager/1.png"
+import crud2 from "../assets/taskmanager/2.png"
+import crud3 from "../assets/taskmanager/3.png"
+import crud4 from "../assets/taskmanager/4.png"
+import crud5 from "../assets/taskmanager/5.png"
+import crud6 from "../assets/taskmanager/6.png"
+import crud7 from "../assets/taskmanager/7.png"
+import crud8 from "../assets/taskmanager/8.png"
+
 
 
 export const projects = [
@@ -192,14 +201,77 @@ export const projects = [
     images: [oe1, oe2, oe3, oe4]
   },
   {
-    id: "demowebstack",
-    title: "Demo WebStack CRUD",
+  id: "demo-webstack-crud",
+    title: "DemoWebStack CRUD — React + Node + Prisma",
     category: "Web",
-    description: "CRUD fullstack con React + Node.",
-    tech: ["React", "Node", "Mongo"],
-    github: "#",
-    images: []
+
+    description: "Aplicación fullstack CRUD con arquitectura desacoplada, API REST en Express y frontend React con consumo de endpoints.",
+
+    tech: [
+      "React",
+      "Node",
+      "Express",
+      "Prisma",
+      "SQLite",
+      "Zod"
+    ],
+
+    github: "https://github.com/danddiaz/demo-crud-frontend",
+    repoType: "Frontend",
+
+    github2: "https://github.com/danddiaz/demo-crud-api",
+    repoType2: "Backend",
+
+    details: {
+      overview: `
+      Proyecto fullstack CRUD construido como entrenamiento técnico para pruebas
+      de Software Developer Junior. Implementa arquitectura cliente–servidor
+      desacoplada con API REST, validación de datos, ORM y componentes reutilizables.
+      `,
+
+      features: [
+        "CRUD completo de tareas",
+        "API REST Express",
+        "Arquitectura por capas backend",
+        "Validación con Zod",
+        "ORM con Prisma",
+        "Base de datos SQLite",
+        "Frontend React desacoplado",
+        "Componentes reutilizables",
+        "Edición en línea",
+        "Manejo de errores",
+        "Estados de carga"
+      ],
+
+      role: [
+        "Implementación backend completo",
+        "Diseño de arquitectura por capas",
+        "Construcción de endpoints REST",
+        "Integración Prisma ORM",
+        "Validaciones de payload",
+        "Construcción frontend React",
+        "Capa HTTP desacoplada",
+        "Componentes reutilizables",
+        "Integración frontend–backend",
+        "Documentación técnica README"
+      ],
+
+      learnings: [
+        "Arquitectura fullstack desacoplada",
+        "Diseño de APIs REST",
+        "Validación backend obligatoria",
+        "Uso de ORM",
+        "Separación controller–service",
+        "Consumo API en React",
+        "Manejo de estado UI",
+        "Flujo completo CRUD"
+      ]
+    },
+
+    images: [
+      crud1, crud2, crud3, crud4, crud5, crud6, crud7, crud8]
   },
+
   {
     id: "datadashboard",
     title: "Data Dashboard",
