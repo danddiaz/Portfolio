@@ -1,65 +1,117 @@
+import { useState } from "react"
+import Accordion from "../components/Accordion"
+
 export default function Skills() {
   return (
     <div>
-      <h1 className="page-title">Habilidades Técnicas</h1>
 
-      <SkillBlock
-        title="Lenguajes de programación"
-        items={[
-          "Python — análisis de datos, dashboards, scripts",
-          "JavaScript — aplicaciones web React",
-          "Java — proyectos académicos",
-          "C++ — bases de programación",
-          "PHP — desarrollo web básico",
-          "SQL / NoSQL — modelado y consultas",
-          "Kotlin — desarrollo Android",
-          "Dart — Flutter apps"
-        ]}
-      />
+      <h1 className="page-title">Habilidades</h1>
 
-      <SkillBlock
-        title="Análisis de Datos & Visualización"
-        items={[
-          "Power BI — dashboards e indicadores",
-          "Pandas — procesamiento de datos",
-          "Matplotlib / Seaborn — visualización",
-          "Excel avanzado — análisis y reporting",
-          "Modelado de datos"
-        ]}
-      />
+    <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+          gap: 20,
+          alignItems: "start"
+        }}
+    >
+        <Accordion
+          title="Lenguajes de programación"
+          items={[
+            "JavaScript — React, Node, APIs",
+            "Python — análisis de datos y scripts",
+            "PHP — CRUD, login, roles",
+            "SQL — modelado y consultas",
+            "Kotlin — apps Android",
+            "Dart — Flutter",
+            "Java — proyectos académicos",
+            "C++ — fundamentos"
+          ]}
+        />
 
-      <SkillBlock
-        title="Desarrollo & Plataformas"
-        items={[
-          "React — SPA y componentes",
-          "Node.js — APIs básicas",
-          "Flutter — apps móviles",
-          "openEDX — soporte LMS",
-          "Power Platform — automatización"
-        ]}
-      />
+        <Accordion
+          title="Fullstack & Web"
+          items={[
+            "React — SPA y componentes",
+            "Node + Express — APIs REST",
+            "CRUD fullstack",
+            "Arquitectura cliente–servidor",
+            "Fetch API",
+            "Validación con Zod",
+            "Prisma ORM",
+            "Autenticación y roles"
+          ]}
+        />
 
-      <SkillBlock
-        title="Infraestructura & Redes"
-        items={[
-          "Cisco Packet Tracer",
-          "Simulación de redes",
-          "Switching",
-          "Fundamentos IoT",
-          "Arduino"
-        ]}
-      />
+        <Accordion
+          title="Datos & Visualización"
+          items={[
+            "Power BI",
+            "Pandas",
+            "Visualización",
+            "EDA básico",
+            "Excel avanzado"
+          ]}
+        />
+
+        <Accordion
+          title="Mobile & Cloud"
+          items={[
+            "Flutter",
+            "Kotlin",
+            "Firebase",
+            "Firestore",
+            "Auth Firebase"
+          ]}
+        />
+
+        <Accordion
+          title="Infraestructura & Plataformas"
+          items={[
+            "Docker",
+            "Tutor Open edX",
+            "Linux + Bash",
+            "XAMPP",
+            "MySQL",
+            "LMS administration",
+            "IoT integración"
+          ]}
+        />
+
+        <Accordion
+          title="Habilidades Profesionales"
+          items={[
+            "Liderazgo técnico",
+            "Coordinación de semillero",
+            "Organización de eventos tecnológicos",
+            "Trabajo en equipo",
+            "Comunicación técnica",
+            "Presentación de ponencias",
+            "Trabajo bajo presión",
+            "Entornos interculturales"
+          ]}
+        />
+
+        <Accordion
+          title="Comunicación & Academia"
+          items={[
+            "Ponencia técnica",
+            "Poster de investigación",
+            "Charlas Women Game Jam",
+            "Charlas Global Game Jam",
+            "Monitora universitaria"
+          ]}
+        />
+
+        <Accordion
+          title="Idiomas"
+          items={[
+            "Español — nativo",
+            "Inglés — B2"
+          ]}
+        />
+      </div>
     </div>
   )
 }
 
-function SkillBlock({ title, items }) {
-  return (
-    <div style={{ marginBottom: 28 }}>
-      <h2>{title}</h2>
-      <ul style={{ lineHeight: 1.7 }}>
-        {items.map(i => <li key={i}>{i}</li>)}
-      </ul>
-    </div>
-  )
-}

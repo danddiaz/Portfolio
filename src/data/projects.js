@@ -88,7 +88,7 @@ export const projects = [
   },
   {
     id: "pocketlist",
-    title: "PocketList — Lista de Compras",
+    title: "PocketList",
     category: "Mobile",
     description: "Aplicación multiplataforma para gestión de listas de compras con Flutter y Firebase, con sincronización en tiempo real.",
 
@@ -202,7 +202,7 @@ export const projects = [
   },
   {
   id: "demo-webstack-crud",
-    title: "DemoWebStack CRUD — React + Node + Prisma",
+    title: "Demo CRUD Web",
     category: "Web",
 
     description: "Aplicación fullstack CRUD con arquitectura desacoplada, API REST en Express y frontend React con consumo de endpoints.",
@@ -271,17 +271,7 @@ export const projects = [
     images: [
       crud1, crud2, crud3, crud4, crud5, crud6, crud7, crud8]
   },
-
-  {
-    id: "datadashboard",
-    title: "Data Dashboard",
-    category: "Data",
-    description: "Dashboard de análisis de datos JSON.",
-    tech: ["Python", "Data"],
-    github: "#",
-    images: []
-  },
-  {
+{
   id: "cctv-web",
   title: "Sistema Web Seguridad WiFi CCTV",
   category: "Web",
@@ -343,6 +333,55 @@ export const projects = [
   },
 
   images: [cctv1, cctv2, cctv3]
-}
+},
 
+{
+  id: "data-dashboard",
+  title: "Dashboard de Análisis de Datos",
+  category: "Data",
+
+  description: "En proceso - Proyecto de análisis y visualización de datos actualmente en desarrollo.",
+
+  tech: [
+    "Python",
+    "Pandas",
+    "Power BI",
+    "Visualización"
+  ],
+
+  status: "En desarrollo",
+
+  github: null,
+
+  details: {
+    overview: `
+    Proyecto de análisis de datos aplicado actualmente en construcción.
+    Incluirá limpieza de datos, análisis exploratorio, visualización
+    y conclusiones orientadas a métricas de negocio.
+    `,
+
+    features: [
+      "Limpieza y transformación de datos",
+      "Análisis exploratorio (EDA)",
+      "Visualizaciones",
+      "Métricas clave",
+      "Conclusiones técnicas",
+      "Notebook documentado"
+    ],
+
+    role: [
+      "Diseño del análisis",
+      "Modelado de métricas",
+      "Construcción de visualizaciones"
+    ],
+
+    learnings: [
+      "Storytelling con datos",
+      "EDA estructurado",
+      "Comunicación de insights"
+    ]
+  },
+
+  images: []
+}
 ]
