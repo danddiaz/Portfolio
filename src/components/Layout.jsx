@@ -6,7 +6,8 @@ export default function Layout({ children }) {
       <header style={{
         background: "#0f172a",
         color: "white",
-        padding: "20px 0"
+        padding: "20px 0",
+        borderBottom: "2px solid #1e293b"
       }}>
         <div className="container" style={{
           display: "flex",
